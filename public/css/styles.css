@@ -270,6 +270,12 @@ img {
   display: block;
 }
 
+.hero .btn--ghost:hover {
+  background: var(--orange-dark);
+  color: var(--white);
+  box-shadow: none;
+}
+
 /* Trust strip */
 
 .trust {
@@ -746,6 +752,31 @@ img {
   padding-top: 24px;
 }
 
+@media (max-width: 1200px) {
+  .site-header--home .container {
+    flex-wrap: wrap;
+  }
+
+  .site-header--home .nav-links {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-left: -14px;
+  }
+
+  .site-header--home .nav-links .btn {
+    margin-left: 14px;
+  }
+
+  .hero-inner {
+    gap: 40px;
+  }
+
+  .hero-media {
+    width: 45%;
+    flex-shrink: 0;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -780,6 +811,19 @@ img {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .playbook-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .hero-media {
+    width: 100%;
   }
 }
 
